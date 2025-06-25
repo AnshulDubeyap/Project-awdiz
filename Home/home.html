@@ -15,32 +15,18 @@
   </head>
   <body>
     <section class="home">
-      <header class="header-1-desktop">
-        <div class="header-1-left">
-          <p class="header-1-link">
-            Hi! <span>Sign in</span> or <span>register</span>
-          </p>
-          <p class="header-1-link">Daily Deals</p>
-          <p class="header-1-link">Brand Outlet</p>
-          <p class="header-1-link">Gift Cards</p>
-          <p class="header-1-link">Help & Contact</p>
-        </div>
-        <div class="header-1-right">
-          <p class="header-1-link">Watchlist</p>
-          <p class="header-1-link">My eBay</p>
-          <i class="fa-regular fa-heart header-1-icon"></i>
-          <i class="fa-regular fa-user header-1-icon"></i>
-          <i class="fa-solid fa-cart-shopping header-1-icon"></i>
-        </div>
       </header>
       <header class="header-1">
         <div class="header-1-content-1">
-          <p class="header-1-links">Hi! <span>Sign in</span></p>
-          <p class="header-1-links">Gift Cards</p>
+          <p class="header-1-links">Hi! <span class="span">Sign in</span> <spa id="desktop">or</spa> <span id="desktop" class="span">Register</span></p>
+          <p id="desktop" class="header-1-links">Brands Outlet</p>
+          <p id="desktop" class="header-1-links">Help & Contact</p>
         </div>
         <div class="header-1-content-2">
-          <p class="header-1-links">My eBay</p>
-          <i id="header-1-icon" class="fa-solid fa-cart-shopping"></i>
+          <i id="desktop" class="fa-solid fa-cart-shopping"></i>
+          <i id="mobile" class="fa-solid fa-bars"></i>
+          <i id="desktop" class="fa-regular fa-user"></i>
+          <i id="desktop"  class="fa-regular fa-bell"></i>
         </div>
       </header>
       <hr />
@@ -52,6 +38,9 @@
               src="./images/ebay-logo.png"
               alt="e-bay-logo"
             />
+          </div>
+          <div class="header-2-text-container" id="desktop">
+            <p class="header-2-text">Shop by category</p>
           </div>
           <div class="search-container">
             <div class="search">
@@ -65,16 +54,26 @@
               </div>
             </div>
           </div>
+          <div id="desktop" class="search-button-container">
+            <button class="search-button">Search</button>
+          </div>
         </div>
       </header>
       <hr />
       <div class="navigation">
         <nav>
           <div class="nav-link"><p class="nav-link-text">eBay live</p></div>
+          <div class="nav-link"><p class="nav-link-text">Shopping Cart</p></div>
           <div class="nav-link"><p class="nav-link-text">Saved</p></div>
           <div class="nav-link"><p class="nav-link-text">Electronics</p></div>
           <div class="nav-link"><p class="nav-link-text">Motors</p></div>
-          <div class="nav-link"><p class="nav-link-text">More</p></div>
+          <div id="desktop" class="nav-link"><p class="nav-link-text">Fashion</p></div>
+          <div id="desktop" class="nav-link"><p class="nav-link-text">Collectibles and Art</p></div>
+          <div id="desktop" class="nav-link"><p class="nav-link-text">Sports</p></div>
+          <div id="desktop" class="nav-link"><p class="nav-link-text">Health and Beauty</p></div>
+          <div id="desktop" class="nav-link"><p class="nav-link-text">Industrial equipment</p></div>
+          <div id="desktop" class="nav-link"><p class="nav-link-text">Home and Garden</p></div>
+          <div id="mobile" class="nav-link"><p class="nav-link-text">More</p></div>
         </nav>
       </div>
       <main>
@@ -89,10 +88,10 @@
           </button>
         </div>
         <div class="main-container-2">
-          <p class="main-container-2-heading">Build an elite collection</p>
+          <div class="main-container-2-content"><p class="main-container-2-heading">Build an elite collection</p>
           <p class="main-container-2-subheading">
             choose your next adventure from thousands of <br />finds.
-          </p>
+          </p></div>
           <button class="main-container-2-button">
             <p class="main-container-2-button-text">Start your journey</p>
           </button>
@@ -124,13 +123,39 @@
               />
               <p class="main-container-3-card-text">P&A</p>
             </div>
+            <div class="main-container-3-card">
+              <img
+              id="desktop"
+                class="main-container-3-card-image"
+                src="./images/Card-4.jpg"
+                alt="main-container-3-card-1"
+              />
+              <p id="desktop" class="main-container-3-card-text">Trading Cards</p>
+            </div>
+            <div class="main-container-3-card">
+              <img id="desktop"
+                class="main-container-3-card-image"
+                src="./images/Card-5.jpg"
+                alt="main-container-3-card-1"
+              />
+              <p id="desktop" class="main-container-3-card-text">Toys</p>
+            </div>
+            <div class="main-container-3-card">
+              <img
+                id="desktop"
+                class="main-container-3-card-image"
+                src="./images/Card-6.jpg"
+                alt="main-container-3-card-1"
+              />
+              <p id="desktop" class="main-container-3-card-text">Refurbished</p>
+            </div>
           </div>
         </div>
         <div class="main-container-4">
-          <p class="main-container-4-heading">Todays Deals</p>
+          <div class="main-container-4-content"><p class="main-container-4-heading">Todays Deals</p>
           <p class="main-container-4-subheading">
             All with free shipping and easy returns
-          </p>
+          </p></div>
           <button class="main-container-4-button">
             <p class="main-container-4-button-text">Shop now</p>
           </button>
@@ -283,6 +308,16 @@
             </div>
           </div>
         </div>
+        <div id="desktop"><div class="main-container-1" style="background-image: url(./images/main-6.jpg);">
+          <p class="main-container-1-heading">Return made simple</p>
+          <p class="main-container-1-subheading">
+            Not happy with your purchase?<br />
+            its easy to start a return.
+          </p>
+          <button class="main-container-1-button">
+            <p class="main-container-1-button-text">Learn more</p>
+          </button>
+        </div></div>
       </main>
       <footer>
         <div class="mobile-footer">
