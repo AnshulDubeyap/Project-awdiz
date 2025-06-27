@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>eBay Checkout</title>
+    <link rel="stylesheet" href="./payment.css"
+  </head>
+  <body>
+    <header class="header">
+      <img src="./images/ebay-logo.png" alt="eBay" class="logo" />
+    </header>
+
+    <main class="checkout">
+      <h1>Checkout</h1>
+
+      <section class="section address">
+        <h2>Shipping Address</h2>
+        <div class="form-group">
+          <input placeholder="Full Name" />
+          <input placeholder="Address Line 1" />
+          <input placeholder="City" />
+          <input placeholder="State" />
+          <input placeholder="Zip Code" />
+          <input placeholder="Country" />
+        </div>
+      </section>
+
+      <section class="section card">
+        <h2>Card Payment</h2>
+        <div class="form-group">
+          <input placeholder="Cardholder Name" />
+          <input placeholder="Card Number" />
+          <div class="flex-row">
+            <input placeholder="MM / YY" />
+            <input placeholder="CVV" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section paypal">
+        <button class="paypal-btn">
+          <img
+            src="https://www.paypalobjects.com/webstatic/icon/pp258.png"
+            alt="PayPal"
+          />
+          Pay with PayPal
+        </button>
+      </section>
+
+      <section class="section summary">
+        <h2>Order Summary</h2>
+        <div class="line"><span>Item Total</span><span>$199.99</span></div>
+        <div class="line"><span>Shipping</span><span>Free</span></div>
+        <div class="line total"><span>Total</span><span>$199.99</span></div>
+      </section>
+
+      <button class="place-order">Place Order</button>
+    </main>
+  </body>
+</html>
