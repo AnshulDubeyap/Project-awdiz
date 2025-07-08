@@ -63,45 +63,77 @@
     <hr />
     <main>
       <section class="cart-section">
-        <p class="cart-heading">Shopping Cart</p>
-        <div class="cart-items-container">
-          <div class="checkout">
-            <div class="items">
-              <p>Item:1</p>
-              <p>USD $469.99</p>
-            </div>
-            <div class="sub-total">
-              <p>SubTotal</p>
-              <p>USD $469.99</p>
-            </div>
-            <button class="checkout-button">Checkout</button>
+        <div class="cart-checkout">
+          <div class="card-title">
+            <h1>Shopping Cart</h1>
           </div>
-          <div class="cart-items">
-            <div class="cart-item">
-              <p class="brand-name">
-                dysonstoredysonstore <br />
-                <span>94.8% positive feedback</span>
+
+          <div class="cart-contents">
+            <button class="checkout-button">
+              <span class="checkout-button-text">Go to Checkout</span>
+            </button>
+            <div class="subtotal">
+              <p class="subtotal-text">Subtotal</p>
+              <p class="subtotal-price">US $349.99</p>
+            </div>
+          </div>
+          <div class="item">
+            <p class="item-text">Item(1)</p>
+            <p class="item-price">US $349.99</p>
+          </div>
+
+          <div class="cart-cards">
+            <img class="cart-cards-image" src="./images/ebay_blue_card.png" />
+            <div class="cart-cards-description">
+              <p class="cart-cards-description-text">
+                Earn up to 5X points with your eBay Mastercard ®.
               </p>
-              <div class="cart-item-info">
-                <img src="./images/7.webp" />
-                <div class="cart-item-details">
-                  <p class="cart-item-name">
-                    Dyson V12 Detect Slim Absolute Cordless Vacuum | Gold |
-                    Refurbished
+              <p class="cart-cards-description-link">See details</p>
+            </div>
+          </div>
+        </div>
+        <div class="cart-items">
+          <div class="cart-item">
+            <div class="item-brand">
+              <img class="item-brand-logo" src="./images/s-l225.webp" />
+              <div class="item-brand-description">
+                <p class="item-brand-description-text">dyson store</p>
+                <p class="item-brand-description-subtext">
+                  94.8% positive feedback
+                </p>
+              </div>
+            </div>
+            <div class="item-description">
+              <div class="item-description-details">
+                <img class="item-image" src="images/7.webp" />
+                <div class="item-description-name">
+                  <p class="description-text">
+                    Dyson V12 Detect Slim Absolute Cordless<br />
+                    Vacuum | Gold | Refurbished
                   </p>
-                  <p class="cart-item-details-text">Certified - Refurbished</p>
-                </div>
-                <div class="quantity">Quantity:1</div>
-                <div class="cart-item-price">
-                  <p>USD $469.99</p>
-                  <p>US $649.99</p>
-                  <p>returns accepted</p>
+                  <p class="description-subtext">Certified - Refurbished</p>
                 </div>
               </div>
-              <div class="actions">
-                <p>Remove</p>
-                <p>Save for later</p>
+              <div class="item-quantity">
+                <p class="quantity-text">Qty</p>
+                <select>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
               </div>
+
+              <div class="item-price">
+                <p class="price">US $349.99</p>
+                <p class="sale-price">US $649.99</p>
+                <p class="returns">returns accepted</p>
+              </div>
+            </div>
+            <div class="item-actions">
+              <button class="remove-button">Remove</button>
+              <button class="save-button">Save for later</button>
             </div>
           </div>
         </div>
